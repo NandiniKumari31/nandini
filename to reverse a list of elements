@@ -1,0 +1,4 @@
+def reversing(arr):
+    arr.reverse()
+    print(arr)
+reversing([1,2,3])  
