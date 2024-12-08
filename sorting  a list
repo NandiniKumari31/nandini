@@ -1,0 +1,4 @@
+def sorting(arr):
+    arr.sort()
+    print(arr)
+sorting([15,2,13]) 
