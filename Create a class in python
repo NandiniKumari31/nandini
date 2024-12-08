@@ -1,0 +1,8 @@
+class person():
+    def __init__(self,name,age):
+        self.name=name
+        self.age=age
+    def make(self):
+        print(f'the person {self.name} can make kites')
+obj=person("sai","20")
+obj.make()
