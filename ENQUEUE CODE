@@ -1,0 +1,30 @@
+class Node:
+    def __init__(self,d):
+        self.prev=None
+        self.data=d
+        self.next=None
+class queue:
+    def __init__(self):
+        self.front=self.rear=None
+    def enqueue(self,v):
+        New_node=Node(v)
+        if not self.rear:
+            self.front=self.rear=New_node
+            return
+        self.rear.next=New_node
+        New_node.prev=self.rear
+        self.rear=New_node
+    def trace(self):
+        current=self.front
+        if not current:
+            print("queue empty")
+        while current:
+            print(current.data)
+            current=current.next
+            
+        
+q=queue()
+q.enqueue(10)
+q.enqueue(20)
+q.enqueue(30)
+q.trace()
