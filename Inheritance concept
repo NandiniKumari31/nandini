@@ -1,0 +1,16 @@
+class grand:
+    def __init__(self,name,occupation1):
+        self.name=name
+        self.occupation1=occupation1
+    def intro(self):
+        return(f"{self.name} is a {self.occupation1}")
+class parent(grand):
+    def __init__(self,name,occupation1,occupation2):
+        super().__init__(name,occupation1)
+        self.occupation2=occupation2
+    def work(self):
+        return(f"{self.name} is a {self.occupation1} and {self.occupation2}")
+s=parent("ram","famer","actor")
+print(s.work())
+a=grand("surya","famer")
+print(a.intro())
