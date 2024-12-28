@@ -1,0 +1,23 @@
+class Rectangle():
+    def __init__(self,length,breadth):
+        self.length=length
+        self.breadth=breadth
+    def area(self):
+        return f"area is {self.length*self.breadth}"
+class square(Rectangle):
+    def __init__(self,length,breadth):
+        super().__init__(length,breadth)
+    def area(self):
+        return f"area is {self.length*self.length}"
+class cuboid(square):
+    def __init__(self,length,breadth,height):
+        super().__init__(length,breadth)
+        self.height=height
+    def vol(self):
+        return f"vol is {self.length*self.breadth*self.height}"
+s=square(2,3)
+print(s.area())
+r=Rectangle(2,3)
+print(r.area())
+c=cuboid(2,3,4)
+print(c.vol())
