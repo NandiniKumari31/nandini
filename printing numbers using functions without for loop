@@ -1,0 +1,12 @@
+def fun1(val):
+    print(val)
+    fun2(val+1)
+def fun2(val):
+    print(val)
+    fun3(val+1)
+def fun3(val):
+    print(val)
+    fun4(val+1)
+def fun4(val):
+    print(val)
+fun1(1)
